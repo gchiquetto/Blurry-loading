@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Lato', sans-serif; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  overflow: hidden; }
+
+.percentage {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all .6s;
+  color: #fff; }
+  .percentage--hidden {
+    opacity: 0; }
+
+.img {
+  background-image: url("../img/large.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  filter: blur(30px); }
